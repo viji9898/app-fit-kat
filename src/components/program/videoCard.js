@@ -1,8 +1,9 @@
-import { Button } from "antd";
+// import { Button } from "antd";
 import { useState } from "react";
 
 export const VideoCard = ({ exercises }) => {
   const [activeVideo, setActiveVideo] = useState(0);
+  console.log(setActiveVideo);
 
   //   const listVideos = exercises.videoUrl.map((data, index) => {
   //     return (
@@ -24,21 +25,21 @@ export const VideoCard = ({ exercises }) => {
   //     );
   //   });
 
-  const listVideoButtons = exercises.videoUrl.map((data, index) => {
-    return (
-      <Button
-        onClick={() => {
-          setActiveVideo(index);
-        }}
-      >
-        {data.buttonTitle}
-      </Button>
-    );
-  });
+  // const listVideoButtons = exercises.videoUrl.map((data, index) => {
+  //   return (
+  //     <Button
+  //       onClick={() => {
+  //         setActiveVideo(index);
+  //       }}
+  //     >
+  //       {data.buttonTitle}
+  //     </Button>
+  //   );
+  // });
 
   return (
     <span>
-      <div style={{ padding: "75% 0 0 0", position: "relative" }}>
+      <div style={{ padding: "50% 0 0 0", position: "relative" }}>
         <iframe
           loading="lazy"
           src={exercises.videoUrl[activeVideo].url}
@@ -51,13 +52,13 @@ export const VideoCard = ({ exercises }) => {
             width: "100%",
             height: "100%",
           }}
-          title={exercises.videoUrl[activeVideo].title}
+          title="sample"
         ></iframe>
         <br></br>
       </div>
-      <div style={{ textAlign: "center", marginBottom: "5px" }}>
+      {/* <div style={{ textAlign: "center", marginBottom: "5px" }}>
         {listVideoButtons}
-      </div>
+      </div> */}
     </span>
   );
 };
