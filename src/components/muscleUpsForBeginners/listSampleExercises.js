@@ -257,17 +257,9 @@ export const ListSampleExercises = () => {
     ];
     const OperationsSlot = {
       left: (
-        <Button
-          shape="round"
-          style={{
-            marginLeft: "10px",
-            marginRight: "16px",
-            background: "black",
-            color: "white",
-          }}
-        >
-          {data.title}
-        </Button>
+        <div style={{ padding: "10px" }}>
+          <b>{data.title}</b>
+        </div>
       ),
     };
     return (
