@@ -2,6 +2,8 @@ import { Col, Row } from "antd";
 import { PageLayout } from "../components/layout/pageLayout";
 import { ListSampleExercises } from "../components/muscleUpsForBeginners/listSampleExercises";
 import { Purchase } from "../components/muscleUpsForBeginners/purchase";
+import { ListSampleRoutine } from "../components/muscleUpsForBeginners/listSampleRoutine";
+import { ResultsSample } from "../components/muscleUpsForBeginners/resultsSample";
 
 export const MuscleUpBeginners = () => {
   return (
@@ -83,7 +85,6 @@ export const MuscleUpBeginners = () => {
             </p>
           </div>
         </Col>
-
         {/* <Col sm={24} xs={24} md={12}>
           <div style={{ padding: "75% 0 0 0", position: "relative" }}>
             <iframe
@@ -110,6 +111,8 @@ export const MuscleUpBeginners = () => {
           <h2>Sample Workouts</h2>
         </Col>
         <ListSampleExercises />
+        <ListSampleRoutine />
+        <ResultsSample />
         <Purchase />
       </Row>
     </PageLayout>

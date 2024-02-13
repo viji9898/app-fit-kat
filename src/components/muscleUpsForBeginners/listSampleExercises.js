@@ -1,4 +1,4 @@
-import { Button, Col, Row, Tabs } from "antd";
+import { Col, Row, Tabs } from "antd";
 
 import { SampleExercise } from "./sampleExercise";
 import { VideoCard } from "../program/videoCard";
