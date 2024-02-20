@@ -36,12 +36,12 @@ export default function PaymentElement() {
       {
         programRef: "1111",
         programImageThumbnail:
-          "https://fitnessfaqs.com/wp-content/uploads/2020/03/brbbr-4.jpg",
+          "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/muscle-ups-kat-mads.jpg",
         programDescriptionPrice: "£100",
-        programName: "Body Weight Body Building",
+        programName: "Muscle Ups",
         productInfo: {
-          programName: "Body Weight Body Building",
-          programPrice: "12000",
+          programName: "Muscle Ups",
+          programPrice: "10000",
           programCurrency: "usd",
           programRef: "1111",
           productDescription: "",
