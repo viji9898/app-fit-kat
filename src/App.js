@@ -34,7 +34,7 @@ function App() {
           element={<AuthenticationGuard component={ProfilePage} />}
         />
         <Route
-          path="/checkout"
+          path="/checkout/:programId"
           element={<AuthenticationGuard component={PaymentElement} />}
         />
         <Route

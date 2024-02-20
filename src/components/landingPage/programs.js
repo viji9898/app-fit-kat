@@ -1,20 +1,22 @@
-import { Avatar, Button, Card, Col, Row } from "antd";
+import { Button, Card, Col, Row } from "antd";
+
 import { Link } from "react-router-dom";
 
 export const Programs = () => {
-  const { Meta } = Card;
   const programData = [
     {
-      title: "Muscle Ups for Beginners",
+      title: "Muscle Ups",
       image:
-        "https://i.pinimg.com/originals/b8/b5/a1/b8b5a157511031cadfc329ae2431e67b.jpg",
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/muscle-ups-kat-mads.jpg",
       url: "muscle-ups-beginners",
+      description: "Routines to improve your muscle ups",
     },
     {
       title: "Rings for Beginner",
       image:
-        "https://img.freepik.com/premium-photo/working-out-young-athletic-sportswoman-exercising-gymnastic-rings-gym-exercising-woman-holding-gymnast-rings-looking-up-workout-gym-concept-power-strength-healthy-lifestyle-sport_124865-17859.jpg",
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/calisthenics-kat.jpg",
       url: "/programs/limitless-legs",
+      description: "Routines to improve your muscle ups",
     },
     // {
     //   title: "Back Lever Pro",
@@ -52,32 +54,31 @@ export const Programs = () => {
 
   const listPrograms = programData.map((data) => {
     return (
-      <Col xs={24} sm={24} md={24}>
+      <Col xs={24} sm={24} md={12}>
         <Link to={data.url} style={{ textDecoration: "none" }}>
           <Card
+            title={data.title}
             hoverable
-            style={{
-              backgroundColor: "#B7B7B7",
-            }}
+            // style={{
+            //   width: 350,
+            // }}
+            cover={<img alt="example" src={data.image} />}
           >
-            <Meta
-              title={data.title}
-              avatar={
-                <Avatar
-                  shape="square"
-                  size={"large"}
-                  style={{ height: "65px" }}
-                  src={data.image}
-                />
-              }
-              description={<Button>Learn More</Button>}
-            />
-            <Meta />
+            <div style={{ textAlign: "center" }}>
+              {/* {data.description}
+
+              <br></br> */}
+              <Button>Learn More</Button>
+            </div>
           </Card>
         </Link>
       </Col>
     );
   });
 
-  return <Row gutter={[18, 18]}>{listPrograms}</Row>;
+  return (
+    <Row gutter={[18, 18]} style={{ width: "100%" }}>
+      {listPrograms}
+    </Row>
+  );
 };

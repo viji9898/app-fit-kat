@@ -9,7 +9,14 @@ export const PageLayout = ({ children }) => {
     <div>
       <NavBar />
       <div className="main">
-        <Row style={{ maxWidth: "800px", margin: "8px", widows: "100%" }}>
+        <Row
+          style={{
+            maxWidth: "750px",
+            margin: "8px",
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
           {children}
         </Row>
       </div>

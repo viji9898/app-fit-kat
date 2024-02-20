@@ -4,6 +4,7 @@ import { ListSampleExercises } from "../components/muscleUpsForBeginners/listSam
 import { Purchase } from "../components/muscleUpsForBeginners/purchase";
 import { ListSampleRoutine } from "../components/muscleUpsForBeginners/listSampleRoutine";
 import { ResultsSample } from "../components/muscleUpsForBeginners/resultsSample";
+import { PurchaseButton } from "./PurchaseButton";
 
 export const MuscleUpBeginners = () => {
   return (
@@ -106,7 +107,7 @@ export const MuscleUpBeginners = () => {
             <br></br>
           </div>
         </Col> */}
-        <Purchase />
+        <PurchaseButton programId={"0"} />
         <Col span={24} style={{ textAlign: "center" }}>
           <h2>Sample Workouts</h2>
         </Col>
