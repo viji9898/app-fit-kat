@@ -8,7 +8,7 @@ export const Programs = () => {
       title: "Muscle Ups",
       image:
         "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/muscle-ups-kat-mads.jpg",
-      url: "muscle-ups-beginners",
+      url: "muscle-up-sample",
       description: "Routines to improve your muscle ups",
     },
     {

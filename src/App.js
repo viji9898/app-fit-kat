@@ -11,23 +11,23 @@ import { ProfilePage } from "./pages/Profile";
 import { Auth0ContextProvider } from "./utils/auth0/auth0Context";
 import PaymentElement from "./utils/stripe/paymentElement";
 import Completion from "./utils/stripe/completion";
-import { MuscleUpBeginners } from "./pages/MuscleUpsBeginners";
+import { MuscleUpSample } from "./pages/MuscleUpSample";
+import { MuscleUp } from "./pages/MuscleUp";
 
 function App() {
   return (
     <Auth0ContextProvider>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
-
-        <Route
-          exact
-          path="/muscle-ups-beginners"
-          element={<MuscleUpBeginners />}
-        />
+        <Route exact path="/muscle-up-sample" element={<MuscleUpSample />} />
 
         <Route
           path="/assets"
           element={<AuthenticationGuard component={Assets} />}
+        />
+        <Route
+          path="/muscle-up"
+          element={<AuthenticationGuard component={MuscleUp} />}
         />
         <Route
           path="/profile"

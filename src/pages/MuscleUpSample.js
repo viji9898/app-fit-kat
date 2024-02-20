@@ -1,12 +1,30 @@
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import { PageLayout } from "../components/layout/pageLayout";
 import { ListSampleExercises } from "../components/muscleUpsForBeginners/listSampleExercises";
 import { Purchase } from "../components/muscleUpsForBeginners/purchase";
 import { ListSampleRoutine } from "../components/muscleUpsForBeginners/listSampleRoutine";
 import { ResultsSample } from "../components/muscleUpsForBeginners/resultsSample";
 import { PurchaseButton } from "./PurchaseButton";
+import { useContext, useEffect, useState } from "react";
+import Auth0Context from "../utils/auth0/auth0Context";
+import { Link } from "react-router-dom";
 
-export const MuscleUpBeginners = () => {
+export const MuscleUpSample = () => {
+  const { userProfile } = useContext(Auth0Context);
+  const [programPurchaseStatus, setProgramPurchaseStatus] = useState(false);
+
+  useEffect(() => {
+    userProfile.purchase.forEach((data) => {
+      if (data.ref === "1111") {
+        setProgramPurchaseStatus(true);
+      } else {
+        setProgramPurchaseStatus(false);
+      }
+    });
+  }, [userProfile]);
+
+  console.log(programPurchaseStatus);
+
   return (
     <PageLayout>
       <Row gutter={[18, 18]}>
@@ -107,7 +125,13 @@ export const MuscleUpBeginners = () => {
             <br></br>
           </div>
         </Col> */}
-        <PurchaseButton programId={"0"} />
+        {programPurchaseStatus ? (
+          <Link to={"/muscle-up"}>
+            <Button>View Program</Button>
+          </Link>
+        ) : (
+          <PurchaseButton programId={"0"} />
+        )}
         <Col span={24} style={{ textAlign: "center" }}>
           <h2>Sample Workouts</h2>
         </Col>
