@@ -14,7 +14,7 @@ export const MuscleUpSample = () => {
   const [programPurchaseStatus, setProgramPurchaseStatus] = useState(false);
 
   useEffect(() => {
-    userProfile.purchase.forEach((data) => {
+    userProfile.purchases.forEach((data) => {
       if (data.ref === "1111") {
         setProgramPurchaseStatus(true);
       } else {

@@ -23,7 +23,7 @@ exports.handler = async (event, context) => {
             ["data", "profileComplete"],
             q.Var("userDoc")
           ),
-          purchase: q.Select(["data", "purchase"], q.Var("userDoc"), ""),
+          purchases: q.Select(["data", "purchases"], q.Var("userDoc"), []),
           profileData: q.Select(["data"], q.Var("userDoc")),
         }
       )

@@ -10,7 +10,7 @@ export const Auth0ContextProvider = ({ children }) => {
     ref: "",
     profileData: {},
     userEmail: "",
-    purchase: [],
+    purchases: [],
     userId: "",
     profileComplete: "",
   });

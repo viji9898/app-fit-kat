@@ -6,7 +6,7 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import Auth0Context from "../auth0/auth0Context.js";
 import { Avatar, Button, Card, Col, Row } from "antd";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 export default function PaymentElement() {
   const { userProfile } = useContext(Auth0Context);
@@ -30,6 +30,7 @@ export default function PaymentElement() {
   const [clientSecret, setClientSecret] = useState("");
 
   const { Meta } = Card;
+  const navigate = useNavigate();
 
   useEffect(() => {
     const programData = [
@@ -38,7 +39,8 @@ export default function PaymentElement() {
         programImageThumbnail:
           "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/muscle-ups-kat-mads.jpg",
         programDescriptionPrice: "£100",
-        programName: "Muscle Ups",
+        url: "muscle-up",
+        programName: "Muscle Up",
         productInfo: {
           programName: "Muscle Ups",
           programPrice: "10000",
@@ -49,7 +51,12 @@ export default function PaymentElement() {
       },
     ];
     setProgram(programData[programId]);
-  }, [programId]);
+    userProfile.purchases.forEach((data) => {
+      if (data.ref === programData[programId].programRef) {
+        navigate(`/${programData[programId].url}`);
+      }
+    });
+  }, [programId, userProfile, navigate]);
 
   useEffect(() => {
     axios.get("/.netlify/functions/getStripeConfig").then(async (response) => {
@@ -76,7 +83,11 @@ export default function PaymentElement() {
 
   return (
     <Row
-      style={{ maxWidth: "1200px", justifyContent: "center", margin: "10px" }}
+      style={{
+        maxWidth: "1200px",
+        justifyContent: "center",
+        margin: "10px",
+      }}
       gutter={[18, 18]}
     >
       {userProfile && clientSecret && stripePromise && (

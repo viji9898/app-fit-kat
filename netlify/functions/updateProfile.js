@@ -17,10 +17,10 @@ exports.handler = async (event, context) => {
     .query(
       q.Update(q.Ref(q.Collection("Profiles"), ref), {
         data: {
-          purchase: q.Append(
+          purchases: q.Append(
             ...updateProgram,
             q.Select(
-              ["data", "purchase"],
+              ["data", "purchases"],
               q.Get(q.Ref(q.Collection("Profiles"), ref))
             )
           ),
