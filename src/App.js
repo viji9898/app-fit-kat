@@ -13,6 +13,7 @@ import PaymentElement from "./utils/stripe/paymentElement";
 import Completion from "./utils/stripe/completion";
 import { MuscleUpSample } from "./pages/MuscleUpSample";
 import { MuscleUp } from "./pages/MuscleUp";
+import { WarmUpMuscleUp } from "./components/muscleUpsForBeginners/WarmUpMuscleUp";
 
 function App() {
   return (
@@ -28,6 +29,11 @@ function App() {
         <Route
           path="/muscle-up"
           element={<AuthenticationGuard component={MuscleUp} />}
+        />
+        <Route
+          exact
+          path="/muscle-up/warm-up"
+          element={<AuthenticationGuard component={WarmUpMuscleUp} />}
         />
         <Route
           path="/profile"
