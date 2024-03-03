@@ -212,6 +212,33 @@ export const Programs = () => {
           </Card>
         </Link>
       </Col>
+      <Col xs={24} sm={24} md={8}>
+        <Link to={""} style={{ textDecoration: "none" }}>
+          <Card
+            title={"Back Levers"}
+            hoverable
+            // style={{
+            //   width: 350,
+            // }}
+            cover={
+              <img
+                alt="example"
+                src={
+                  "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/katherine-hero-image.jpeg"
+                }
+                style={{ objectFit: "cover", opacity: 0.5 }}
+              />
+            }
+          >
+            <div style={{ textAlign: "center" }}>
+              {/* {data.description}
+
+              <br></br> */}
+              <Button disabled>Coming Soon!</Button>
+            </div>
+          </Card>
+        </Link>
+      </Col>
     </Row>
   );
 };
