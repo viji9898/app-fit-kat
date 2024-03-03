@@ -14,6 +14,10 @@ import Completion from "./utils/stripe/completion";
 import { MuscleUpSample } from "./pages/MuscleUpSample";
 import { MuscleUp } from "./pages/MuscleUp";
 import { WarmUpMuscleUp } from "./components/muscleUpsForBeginners/WarmUpMuscleUp";
+import { FalseGrip } from "./components/muscleUpsForBeginners/FalseGrip";
+import { Transition } from "./components/muscleUpsForBeginners/Transition";
+import { Strength } from "./components/muscleUpsForBeginners/Strength";
+import { ShoulderConditioning } from "./components/muscleUpsForBeginners/ShoulderConditioning";
 
 function App() {
   return (
@@ -34,6 +38,31 @@ function App() {
           exact
           path="/muscle-up/warm-up"
           element={<AuthenticationGuard component={WarmUpMuscleUp} />}
+        />
+        <Route
+          exact
+          path="/muscle-up/false-grip"
+          element={<AuthenticationGuard component={FalseGrip} />}
+        />
+        <Route
+          exact
+          path="/muscle-up/transition"
+          element={<AuthenticationGuard component={Transition} />}
+        />
+        <Route
+          exact
+          path="/muscle-up/strenght"
+          element={<AuthenticationGuard component={Strength} />}
+        />
+        <Route
+          exact
+          path="/muscle-up/shoulder-conditioning"
+          element={<AuthenticationGuard component={ShoulderConditioning} />}
+        />
+        <Route
+          exact
+          path="/muscle-up/shoulder-conditioning"
+          element={<AuthenticationGuard component={Transition} />}
         />
         <Route
           path="/profile"

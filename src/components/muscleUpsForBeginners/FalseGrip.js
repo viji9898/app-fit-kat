@@ -1,19 +1,19 @@
-import { Button, Col, Row, Tabs } from "antd";
+import { Col, Row, Tabs } from "antd";
 import { PageLayout } from "../layout/pageLayout";
-import { programDataMuscleUp } from "./programDataMuscleUp";
+import { falseGripData, programDataMuscleUp } from "./programDataMuscleUp";
 import { useEffect, useState } from "react";
 
 import { SampleExercise } from "./sampleExercise";
 import { VideoCard } from "../program/videoCard";
 import { Link } from "react-router-dom";
 
-export const WarmUpMuscleUp = () => {
+export const FalseGrip = () => {
   const [exercises, setExercises] = useState([
     {
-      url: "forward-circles",
-      title: "Forward Circles",
-      sets: "1",
-      reps: "10",
+      url: "",
+      title: "",
+      sets: "",
+      reps: "",
       rest: false,
       images: [
         {
@@ -33,34 +33,29 @@ export const WarmUpMuscleUp = () => {
         },
       ],
       description: "",
-      thumbnailGif: [
-        {
-          url: "",
-        },
-      ],
     },
   ]);
 
   console.log(programDataMuscleUp.workouts[0].exercises);
 
   useEffect(() => {
-    setExercises(programDataMuscleUp.workouts[0].exercises);
+    setExercises(falseGripData.exercises);
   }, []);
 
-  const listWorkouts = programDataMuscleUp.workouts.map((data, index) => {
-    console.log(index);
+  // const listWorkouts = programDataMuscleUp.workouts.map((data, index) => {
+  //   console.log(index);
 
-    return (
-      <Button
-        style={{ marginRight: "5px" }}
-        onClick={() => {
-          setExercises(programDataMuscleUp.workouts[index].exercises);
-        }}
-      >
-        {data.title}
-      </Button>
-    );
-  });
+  //   return (
+  //     <Button
+  //       style={{ marginRight: "5px" }}
+  //       onClick={() => {
+  //         setExercises(programDataMuscleUp.workouts[index].exercises);
+  //       }}
+  //     >
+  //       {data.title}
+  //     </Button>
+  //   );
+  // });
 
   const listExerciseCards = exercises.map((data, key) => {
     const onChange = (key) => {
@@ -114,8 +109,8 @@ export const WarmUpMuscleUp = () => {
         <Col span={24}>
           <Link to={"/muscle-up"}>Back to program</Link>
         </Col>
-        <Col span={24} style={{ textAlign: "center" }}>
-          <h1>Warm Up</h1>
+        <Col span={24}>
+          <h1>False Grip</h1>
         </Col>
         <Col sm={24} xs={24} md={12}>
           <div>
@@ -164,7 +159,6 @@ export const WarmUpMuscleUp = () => {
             <br></br>
           </div>
         </Col>
-        <Col span={24}>{listWorkouts}</Col>
         <Row gutter={[18, 40]}>{listExerciseCards}</Row>
         <br></br>
       </Row>
