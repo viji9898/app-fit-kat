@@ -118,6 +118,34 @@ export const Programs = () => {
                 src={
                   "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/calisthenics-kat.jpg"
                 }
+                style={{ objectFit: "cover", opacity: 0.5 }}
+              />
+            }
+          >
+            <div style={{ textAlign: "center" }}>
+              {/* {data.description}
+
+              <br></br> */}
+              <Button disabled>Coming Soon!</Button>
+            </div>
+          </Card>
+        </Link>
+      </Col>
+      <Col xs={24} sm={24} md={8}>
+        <Link to={""} style={{ textDecoration: "none" }}>
+          <Card
+            title={"Hand Stands"}
+            hoverable
+            style={{
+              height: "100%",
+            }}
+            cover={
+              <img
+                alt="example"
+                src={
+                  "https://app-fitness.s3.eu-west-2.amazonaws.com/hand-stands.jpg"
+                }
+                style={{ objectFit: "cover", opacity: 0.5 }}
               />
             }
           >
@@ -144,6 +172,7 @@ export const Programs = () => {
                 src={
                   "https://app-fitness.s3.eu-west-2.amazonaws.com/IMG_4003.JPG"
                 }
+                style={{ objectFit: "cover", opacity: 0.5 }}
               />
             }
           >
@@ -170,6 +199,7 @@ export const Programs = () => {
                 src={
                   "https://app-fitness.s3.eu-west-2.amazonaws.com/side-splits.jpg"
                 }
+                style={{ objectFit: "cover", opacity: 0.5 }}
               />
             }
           >
