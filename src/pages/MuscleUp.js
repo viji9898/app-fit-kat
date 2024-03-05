@@ -10,9 +10,11 @@ export const MuscleUp = () => {
         <Link to={data.url}>
           <Card
             hoverable
-            cover={<img alt="example" src={data.thumbnail} />}
-            title={data.title}
-          ></Card>
+            // cover={<img alt="example" src={data.thumbnail} />}
+            // title={data.title}
+          >
+            <img style={{ width: "100%" }} alt="example" src={data.thumbnail} />
+          </Card>
         </Link>
       </Col>
     );

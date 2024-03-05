@@ -3,31 +3,31 @@ export const workoutList = [
     title: "Warm Up",
     url: "warm-up",
     thumbnail:
-      "https://app-fitness.s3.eu-west-2.amazonaws.com/placeholder-image.jpg",
+      "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/program-thumbnails/text-warm-up.png",
   },
   {
     title: "False Grip",
     url: "false-grip",
     thumbnail:
-      "https://app-fitness.s3.eu-west-2.amazonaws.com/placeholder-image.jpg",
+      "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/program-thumbnails/text-false-grip.png",
   },
   {
     title: "Transition",
     url: "transition",
     thumbnail:
-      "https://app-fitness.s3.eu-west-2.amazonaws.com/placeholder-image.jpg",
+      "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/program-thumbnails/text-transition.png",
   },
   {
     title: "Strenght",
     url: "strenght",
     thumbnail:
-      "https://app-fitness.s3.eu-west-2.amazonaws.com/placeholder-image.jpg",
+      "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/program-thumbnails/text-strength.png",
   },
   {
     title: "Shoulder Conditioning",
     url: "shoulder-conditioning",
     thumbnail:
-      "https://app-fitness.s3.eu-west-2.amazonaws.com/placeholder-image.jpg",
+      "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/program-thumbnails/text-shoulder-conditioning.png",
   },
 ];
 
