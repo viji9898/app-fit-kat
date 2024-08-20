@@ -118,6 +118,14 @@ export const ShoulderConditioning = () => {
         <Col sm={24} xs={24} md={12}>
           <div>
             <p>
+              Stretching and opening up the shoulders after ring muscle-up
+              training is essential for recovery and long-term progress. The
+              strain placed on your body during muscle-ups can lead to tightness
+              and muscle imbalances if not properly addressed post-workout.
+              Stretching helps to release this tension, improve flexibility and
+              reduce the risk of injury.
+            </p>
+            {/* <p>
               Welcome to our Women's Muscle-Up Program! This program is
               specifically designed to help women develop the strength, skill,
               and confidence to perform the impressive muscle-up exercise.
@@ -133,7 +141,7 @@ export const ShoulderConditioning = () => {
               it may seem daunting at first, with the right approach and
               consistent training, mastering the muscle-up is well within reach
               for women of all fitness levels.
-            </p>
+            </p> */}
           </div>
         </Col>
         <Col sm={24} xs={24} md={12}>

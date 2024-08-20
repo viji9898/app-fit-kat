@@ -29,27 +29,40 @@ export const MuscleUpSample = () => {
     <PageLayout>
       <Row gutter={[18, 18]}>
         <Col span={24} style={{ textAlign: "center" }}>
-          <h1>MuscleUpBeginners</h1>
+          <h1>Muscle Up Programme</h1>
         </Col>
         <Col sm={24} xs={24} md={12}>
           <div class="program-introduction">
             <p>
+              The Ring Muscle up online programme has been specifically designed
+              to help you develop the strength, mobility and skill to unlock the
+              Ring muscle-up. It is a gymnastic strength movement that combines
+              a pull-up with a transition to a dip, requiring upper body and
+              core strength, as well as coordination and control. While it may
+              seem daunting at first, with the right approach and consistent
+              training, mastering the muscle-up is an achievable and wonderful
+              skill that demonstrates a good mastery of basic foundations on the
+              rings.
+            </p>
+            <p>
+              {/* <p>
               Welcome to our Women's Muscle-Up Program! This program is
               specifically designed to help women develop the strength, skill,
               and confidence to perform the impressive muscle-up exercise.
               Whether you're a beginner looking to achieve your first muscle-up
               or an experienced athlete aiming to refine your technique, this
               program is tailored to meet your needs.
+            </p> */}
             </p>
 
-            <p>
+            {/* <p>
               The muscle-up is a dynamic upper-body movement that combines a
               pull-up with a transition to a dip, requiring significant upper
               body and core strength, as well as coordination and control. While
               it may seem daunting at first, with the right approach and
               consistent training, mastering the muscle-up is well within reach
               for women of all fitness levels.
-            </p>
+            </p> */}
           </div>
         </Col>
         <Col sm={24} xs={24} md={12}>
@@ -62,7 +75,7 @@ export const MuscleUpSample = () => {
             <iframe
               loading="lazy"
               src={
-                "https://player.vimeo.com/video/525247324?h=6a6068dec3&amp;badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                "https://player.vimeo.com/video/1000786281?h=abdb296444&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               }
               frameborder="0"
               allow={"autoplay; fullscreen; picture-in-picture"}

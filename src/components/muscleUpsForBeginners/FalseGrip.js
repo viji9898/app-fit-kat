@@ -115,6 +115,16 @@ export const FalseGrip = () => {
         <Col sm={24} xs={24} md={12}>
           <div>
             <p>
+              False grip is a specific hand position used in the muscle-up.
+              Unlike a standard grip, where the wrist is below the rings, the
+              false grip positions the wrist directly on top of the rings,
+              allowing for a smoother transition from the pull-up to the dip
+              portion of the muscle-up. This grip requires significant wrist and
+              forearm strength, as well as flexibility, but it is essential for
+              achieving a controlled and efficient muscle-up, especially for
+              beginners or those working on strict form.
+            </p>
+            {/* <p>
               Welcome to our Women's Muscle-Up Program! This program is
               specifically designed to help women develop the strength, skill,
               and confidence to perform the impressive muscle-up exercise.
@@ -130,7 +140,7 @@ export const FalseGrip = () => {
               it may seem daunting at first, with the right approach and
               consistent training, mastering the muscle-up is well within reach
               for women of all fitness levels.
-            </p>
+            </p> */}
           </div>
         </Col>
         <Col sm={24} xs={24} md={12}>

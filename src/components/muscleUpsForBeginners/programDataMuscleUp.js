@@ -395,6 +395,72 @@ export const programDataMuscleUp = {
         "https://app-fitness.s3.eu-west-2.amazonaws.com/german-hang/german-hang-low-res.jpg",
       exercises: [
         {
+          url: "wrists-onto-finger-tips",
+          title: "Onto Finger Tips",
+          sets: "1",
+          reps: "8-10",
+          rest: false,
+          description: <div></div>,
+          images: [
+            {
+              url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/warm-up/wrists/low-res-wrisit-onto-finger-tips.jpg",
+              title: "Side View - Onto Finger Tips",
+            },
+            {
+              url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/warm-up/wrists/low-res-wrist-front-view-onto-finger-tips.jpg",
+              title: "Front View - Onto Finger Tips",
+            },
+            {
+              url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/b27cca11-3ba9-469e-9014-f4485686e93a.gif?ClientID=sulu&Date=1709649461&Signature=a4c710db0cbcf538f59d24d742249ec2d329d444",
+              title: "Side View Gif",
+            },
+            {
+              url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/e7c38168-a3a6-4962-9a37-64fff46f009d.gif?ClientID=sulu&Date=1709650139&Signature=d3c1e573cf71f67150a4532ae76cdda23d0a7b64",
+              title: "Front View Gif",
+            },
+          ],
+          videoUrl: [
+            {
+              url: "https://player.vimeo.com/video/919628075?h=e139176ff2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+              title: "Onto Finger Tips",
+              buttonTitle: "",
+            },
+          ],
+        },
+        {
+          url: "back-of-hands-press-up",
+          title: "Back of Hands Press Up",
+          sets: "1",
+          reps: "8-10",
+          rest: false,
+          description: <div></div>,
+          images: [
+            {
+              url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/warm-up/wrists/back-of-hands-press-up-01.png",
+              title: "Back of Hands Press Up 01",
+            },
+            {
+              url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/warm-up/wrists/back-of-hands-press-up-02.png",
+              title: "Back of Hands Press Up 02",
+            },
+            {
+              url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/warm-up/wrists/back-of-hands-press-up-03.png",
+              title: "Back of Hands Press Up 03",
+            },
+            {
+              url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/d034ac1e-d67d-4d32-b101-8326f34cd6e1.gif?ClientID=sulu&Date=1709651472&Signature=14bc9a4e262bf83e3199efd402fda5384d35ad78",
+              title: "Side View Gif",
+            },
+          ],
+          videoUrl: [
+            {
+              url: "https://player.vimeo.com/video/919632871?h=ee51f398c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+              title: "Back of Hands Press Up",
+              buttonTitle: "",
+            },
+          ],
+        },
+        {
           url: "wrists-forward",
           title: "wrists-forward",
           sets: "1",

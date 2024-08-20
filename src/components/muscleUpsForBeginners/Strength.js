@@ -115,6 +115,15 @@ export const Strength = () => {
         <Col sm={24} xs={24} md={12}>
           <div>
             <p>
+              It is important to note that the Ring muscle up is a skill and so
+              strength alone will not help you. However, a required baseline of
+              strength at end range of motion is required and this section is
+              designed to help you understand specifically how to develop the
+              explosive power in the high pull, the depth in the dip as well as
+              the core strength and stability to keep you static for a clean
+              muscle up.
+            </p>
+            {/* <p>
               Welcome to our Women's Muscle-Up Program! This program is
               specifically designed to help women develop the strength, skill,
               and confidence to perform the impressive muscle-up exercise.
@@ -130,7 +139,7 @@ export const Strength = () => {
               it may seem daunting at first, with the right approach and
               consistent training, mastering the muscle-up is well within reach
               for women of all fitness levels.
-            </p>
+            </p> */}
           </div>
         </Col>
         <Col sm={24} xs={24} md={12}>

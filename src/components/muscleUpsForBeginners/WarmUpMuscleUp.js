@@ -119,7 +119,7 @@ export const WarmUpMuscleUp = () => {
         </Col>
         <Col sm={24} xs={24} md={12}>
           <div>
-            <p>
+            {/* <p>
               Welcome to our Women's Muscle-Up Program! This program is
               specifically designed to help women develop the strength, skill,
               and confidence to perform the impressive muscle-up exercise.
@@ -135,6 +135,14 @@ export const WarmUpMuscleUp = () => {
               it may seem daunting at first, with the right approach and
               consistent training, mastering the muscle-up is well within reach
               for women of all fitness levels.
+            </p> */}
+            <p>
+              Warming up correctly for the gymnastic rings is crucial to prevent
+              injury and maximize performance. Start with dynamic movements to
+              mobilise the head, neck and shoulders. Follow this with wrist
+              mobility exercises, as the rings demand significant wrist
+              flexibility and strength. Then incorporate core and scapular
+              activation drills to prepare the body for work on the rings.
             </p>
           </div>
         </Col>

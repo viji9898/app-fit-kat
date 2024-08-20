@@ -116,6 +116,15 @@ export const Transition = () => {
         <Col sm={24} xs={24} md={12}>
           <div>
             <p>
+              The transition in the ring muscle-up is the most challenging phase
+              of the movement, where you shift from the pulling motion of a ring
+              pull-up to the pushing motion of a ring dip. It requires a full
+              range of motion high pull up with a full range of motion deep dip.
+              This combined with good strength and range in shoulder internation
+              rotation as well as coordination is what allows for a smooth,
+              seamless transition.
+            </p>
+            {/* <p>
               Welcome to our Women's Muscle-Up Program! This program is
               specifically designed to help women develop the strength, skill,
               and confidence to perform the impressive muscle-up exercise.
@@ -131,7 +140,7 @@ export const Transition = () => {
               it may seem daunting at first, with the right approach and
               consistent training, mastering the muscle-up is well within reach
               for women of all fitness levels.
-            </p>
+            </p> */}
           </div>
         </Col>
         <Col sm={24} xs={24} md={12}>
