@@ -94,6 +94,29 @@ export const MuscleUpSample = () => {
         <Col sm={24} xs={24} md={24}>
           <div>
             <p>
+              The online programme has been specifically designed to help you
+              develop the strength, mobility and skill to unlock the Ring
+              muscle-up. It is a gymnastic strength movement that transitions
+              from a position below the rings to above by combining a pull up
+              into a dip. While it may seem daunting at first, with the right
+              approach and consistent training, mastering the muscle-up is an
+              achievable and wonderful skill that demonstrates a good mastery of
+              basic foundations on the rings.
+            </p>
+            <p>
+              The program breaks down the muscle-up into manageable steps with
+              the focus not only being on developing the muscles involved in the
+              movement but also on improving mobility, stability, and technique
+              to ensure safe and effective progression.
+            </p>
+            <p>
+              The recommended pre-prequisites for this programme is 1 ring pull
+              up and 1 dip. If you are still working towards these, then keep an
+              eye out for the Rings fundamental programme coming soon!
+            </p>
+          </div>
+          {/* <div>
+            <p>
               Our program takes a progressive approach, breaking down the
               muscle-up into manageable steps and providing targeted exercises
               to build the necessary strength and skills. We focus not only on
@@ -115,7 +138,7 @@ export const MuscleUpSample = () => {
               Program is here to support you on your journey to strength and
               mastery. Let's get started!
             </p>
-          </div>
+          </div> */}
         </Col>
         {/* <Col sm={24} xs={24} md={12}>
           <div style={{ padding: "75% 0 0 0", position: "relative" }}>

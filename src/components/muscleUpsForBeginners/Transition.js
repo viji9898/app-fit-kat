@@ -110,12 +110,21 @@ export const Transition = () => {
           <Link to={"/muscle-up"}>Back to program</Link>
         </Col>
         <Col span={24}>
-          <h1>Transitions</h1>
+          <h1>Transition</h1>
         </Col>
 
         <Col sm={24} xs={24} md={12}>
           <div>
             <p>
+              The transition in the ring muscle-up is the most challenging phase
+              of the movement. It requires strength and solid range of motion
+              through shoulder internal rotation. It is easy to think of the
+              muscle up as a strength move but I would encourage you to see it
+              as a mobility movement that requires strength. This combined with
+              an understanding of the timing and coordination is what allows for
+              a smooth, seamless transition.
+            </p>
+            {/* <p>
               The transition in the ring muscle-up is the most challenging phase
               of the movement, where you shift from the pulling motion of a ring
               pull-up to the pushing motion of a ring dip. It requires a full
@@ -123,7 +132,7 @@ export const Transition = () => {
               This combined with good strength and range in shoulder internation
               rotation as well as coordination is what allows for a smooth,
               seamless transition.
-            </p>
+            </p> */}
             {/* <p>
               Welcome to our Women's Muscle-Up Program! This program is
               specifically designed to help women develop the strength, skill,

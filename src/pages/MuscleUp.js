@@ -24,26 +24,27 @@ export const MuscleUp = () => {
     <PageLayout>
       <Row gutter={[18, 18]}>
         <Col span={24} style={{ textAlign: "center" }}>
-          <h1>Muscle Up Beginners</h1>
+          {/* <h1>Muscle Up Beginners</h1> */}
+          <h1>Welcome to the online muscle up programme</h1>
         </Col>
         <Col sm={24} xs={24} md={12}>
           <div>
             <p>
-              Welcome to our Women's Muscle-Up Program! This program is
-              specifically designed to help women develop the strength, skill,
-              and confidence to perform the impressive muscle-up exercise.
-              Whether you're a beginner looking to achieve your first muscle-up
-              or an experienced athlete aiming to refine your technique, this
-              program is tailored to meet your needs.
+              Welcome to the Muscle-Up Program! The programme has been divided
+              into 5 key sections to help you on your journey; warm-up, false
+              grip, transition, strength and stretching/conditioning. Each
+              section is key to unlocking the skill so be sure not to skip any
+              parts - and yes that means you must warm up and cool down properly
+              too!
             </p>
 
             <p>
-              The muscle-up is a dynamic upper-body movement that combines a
-              pull-up with a transition to a dip, requiring significant upper
-              body and core strength, as well as coordination and control. While
-              it may seem daunting at first, with the right approach and
-              consistent training, mastering the muscle-up is well within reach
-              for women of all fitness levels.
+              The programme provides the basic foundations required in the ring
+              muscle up. However it is important to note that each of us have
+              different bodies and experience levels so to really maximise your
+              progress, you need to identify your own weaknesses and areas to
+              focus on specifically. If you require further help with this, then
+              please do reach out to discuss further an indiviualised programme.{" "}
             </p>
           </div>
         </Col>
@@ -71,6 +72,21 @@ export const MuscleUp = () => {
               title={"Intro to Muscle Ups"}
             ></iframe>
             <br></br>
+          </div>
+        </Col>
+        <Col sm={24} xs={24} md={24}>
+          <div>
+            <p>
+              For each exercise, you will be provided with a video
+              demonstration, an image to remind you of the exercise and a short
+              written description. The intention behind the programme is to make
+              it as user friendly as possible for you in the gym so that once
+              you find your rhythm and understanding of each movement, you can
+              seamlessly flow through your training routine without the
+              disruption of having to watch and read long descriptions. Should
+              you require any further help with the exercises then please do
+              reach out using the online forum.{" "}
+            </p>
           </div>
         </Col>
         {listWorkout}

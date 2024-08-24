@@ -113,7 +113,7 @@ export const ShoulderConditioning = () => {
           <Link to={"/muscle-up"}>Back to program</Link>
         </Col>
         <Col span={24}>
-          <h1>Shoulder Conditioning</h1>
+          <h1>Shoulder Opening and Cool Down</h1>
         </Col>
         <Col sm={24} xs={24} md={12}>
           <div>
