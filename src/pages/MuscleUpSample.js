@@ -32,7 +32,7 @@ export const MuscleUpSample = () => {
           <h1>Muscle Up Programme</h1>
         </Col>
         <Col sm={24} xs={24} md={12}>
-          <div class="program-introduction">
+          <div>
             <p>
               The Ring Muscle up online programme has been specifically designed
               to help you develop the strength, mobility and skill to unlock the
@@ -68,7 +68,7 @@ export const MuscleUpSample = () => {
         <Col sm={24} xs={24} md={12}>
           <div
             style={{
-              padding: "75% 0 0 0",
+              padding: "50% 0 0 0",
               position: "relative",
             }}
           >
