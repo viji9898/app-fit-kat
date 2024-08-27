@@ -76,169 +76,94 @@ export const Programs = () => {
   //   );
   // });
 
-  return (
-    <Row gutter={[18, 18]}>
-      <Col xs={24} sm={24} md={8}>
-        <Link to={"muscle-up-sample"} style={{ textDecoration: "none" }}>
-          <Card
-            title={"Muscle Ups"}
-            hoverable
-            // style={{
-            //   width: 350,
-            // }}
-            cover={
-              <img
-                alt="example"
-                src={
-                  "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/muscle-ups-kat-mads.jpg"
-                }
-              />
-            }
-          >
-            <div style={{ textAlign: "center" }}>
-              {/* {data.description}
+  const programData = [
+    {
+      link: "muscle-up-sample",
+      title: "Muscle Ups",
+      desktopCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/muscle-ups-kat-mads.jpg",
+      mobileCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/placeholder-image.jpg",
+      disabled: false,
+    },
+    {
+      link: "",
+      title: "Hand Stands",
+      desktopCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/hand-stands.jpg",
+      mobileCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/placeholder-image.jpg",
+      disabled: true,
+    },
+    {
+      link: "",
+      title: "Back Bends",
+      desktopCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/IMG_4003.JPG",
+      mobileCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/placeholder-image.jpg",
+      disabled: true,
+    },
+    {
+      link: "",
+      title: "Side Splits",
+      desktopCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/side-splits.jpg",
+      mobileCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/side-splits.jpg",
+      disabled: true,
+    },
+    {
+      link: "",
+      title: "Back Levers",
+      desktopCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/katherine-hero-image.jpeg",
+      mobileCover:
+        "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/katherine-hero-image.jpeg",
+      disabled: true,
+    },
+  ];
 
-              <br></br> */}
-              <Button>Learn More</Button>
-            </div>
-          </Card>
-        </Link>
-      </Col>
-      <Col xs={24} sm={24} md={8}>
-        <Link to={""} style={{ textDecoration: "none" }}>
-          <Card
-            title={"Rings Fundamentals"}
-            hoverable
-            // style={{
-            //   width: 350,
-            // }}
-            cover={
-              <img
-                alt="example"
-                src={
-                  "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/calisthenics-kat.jpg"
-                }
-                style={{ objectFit: "cover", opacity: 0.5 }}
-              />
-            }
-          >
-            <div style={{ textAlign: "center" }}>
-              {/* {data.description}
+  const listProgramData = programData.map((data) => {
+    return (
+      <>
+        <Col xs={0} sm={0} md={8}>
+          <Link to={data.link} style={{ textDecoration: "none" }}>
+            <Card
+              title={data.title}
+              hoverable
+              cover={<img alt="example" src={data.desktopCover} />}
+            >
+              <div style={{ textAlign: "center" }}>
+                {data.disabled ? (
+                  <Button disabled>Coming Soon!</Button>
+                ) : (
+                  <Button>Learn More</Button>
+                )}
+              </div>
+            </Card>
+          </Link>
+        </Col>
+        <Col xs={24} sm={24} md={0}>
+          <Link to={data.link} style={{ textDecoration: "none" }}>
+            <Card
+              title={data.title}
+              hoverable
+              cover={<img alt="example" src={data.mobileCover} />}
+            >
+              <div style={{ textAlign: "center" }}>
+                {data.disabled ? (
+                  <Button disabled>Coming Soon!</Button>
+                ) : (
+                  <Button>Learn More</Button>
+                )}
+              </div>
+            </Card>
+          </Link>
+        </Col>
+      </>
+    );
+  });
 
-              <br></br> */}
-              <Button disabled>Coming Soon!</Button>
-            </div>
-          </Card>
-        </Link>
-      </Col>
-      <Col xs={24} sm={24} md={8}>
-        <Link to={""} style={{ textDecoration: "none" }}>
-          <Card
-            title={"Hand Stands"}
-            hoverable
-            style={{
-              height: "100%",
-            }}
-            cover={
-              <img
-                alt="example"
-                src={
-                  "https://app-fitness.s3.eu-west-2.amazonaws.com/hand-stands.jpg"
-                }
-                style={{ objectFit: "cover", opacity: 0.5 }}
-              />
-            }
-          >
-            <div style={{ textAlign: "center" }}>
-              {/* {data.description}
-
-              <br></br> */}
-              <Button disabled>Coming Soon!</Button>
-            </div>
-          </Card>
-        </Link>
-      </Col>
-      <Col xs={24} sm={24} md={8}>
-        <Link to={""} style={{ textDecoration: "none" }}>
-          <Card
-            title={"Back Bends"}
-            hoverable
-            style={{
-              height: "100%",
-            }}
-            cover={
-              <img
-                alt="example"
-                src={
-                  "https://app-fitness.s3.eu-west-2.amazonaws.com/IMG_4003.JPG"
-                }
-                style={{ objectFit: "cover", opacity: 0.5 }}
-              />
-            }
-          >
-            <div style={{ textAlign: "center" }}>
-              {/* {data.description}
-
-              <br></br> */}
-              <Button disabled>Coming Soon!</Button>
-            </div>
-          </Card>
-        </Link>
-      </Col>
-      <Col xs={24} sm={24} md={8}>
-        <Link to={""} style={{ textDecoration: "none" }}>
-          <Card
-            title={"Side Splits"}
-            hoverable
-            // style={{
-            //   width: 350,
-            // }}
-            cover={
-              <img
-                alt="example"
-                src={
-                  "https://app-fitness.s3.eu-west-2.amazonaws.com/side-splits.jpg"
-                }
-                style={{ objectFit: "cover", opacity: 0.5 }}
-              />
-            }
-          >
-            <div style={{ textAlign: "center" }}>
-              {/* {data.description}
-
-              <br></br> */}
-              <Button disabled>Coming Soon!</Button>
-            </div>
-          </Card>
-        </Link>
-      </Col>
-      <Col xs={24} sm={24} md={8}>
-        <Link to={""} style={{ textDecoration: "none" }}>
-          <Card
-            title={"Back Levers"}
-            hoverable
-            // style={{
-            //   width: 350,
-            // }}
-            cover={
-              <img
-                alt="example"
-                src={
-                  "https://app-fitness.s3.eu-west-2.amazonaws.com/movebykat/katherine-hero-image.jpeg"
-                }
-                style={{ objectFit: "cover", opacity: 0.5 }}
-              />
-            }
-          >
-            <div style={{ textAlign: "center" }}>
-              {/* {data.description}
-
-              <br></br> */}
-              <Button disabled>Coming Soon!</Button>
-            </div>
-          </Card>
-        </Link>
-      </Col>
-    </Row>
-  );
+  return <Row gutter={[18, 18]}>{listProgramData}</Row>;
 };
