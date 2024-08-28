@@ -3,8 +3,7 @@ const stripe = require("stripe")(process.env.REACT_APP_STRIPE_TEST_SECRET_KEY, {
 });
 
 exports.handler = async (event) => {
-  const endpointSecret =
-    "whsec_50370bb020c1cfd94181ff9b922c11839376c29d1dbfe898698f825b6195b94b";
+  const endpointSecret = process.env.REACT_APP_STRIPE_SIGNING_SECRET;
 
   const sig = event.headers["stripe-signature"];
 
