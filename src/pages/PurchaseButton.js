@@ -8,7 +8,15 @@ export const PurchaseButton = ({ programId }) => {
       <Row gutter={[18, 18]}>
         <Col span={24}>
           <Link to={`/checkout/${programId}`}>
-            <Button>Buy Muscle Up Program</Button>
+            <Button
+              style={{
+                width: "300px",
+                backgroundColor: "black",
+                color: "white",
+              }}
+            >
+              <strong>Sign Up & Purchase</strong>
+            </Button>
           </Link>
         </Col>
       </Row>

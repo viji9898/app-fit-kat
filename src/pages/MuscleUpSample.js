@@ -1,9 +1,9 @@
 import { Button, Col, Row } from "antd";
 import { PageLayout } from "../components/layout/pageLayout";
 import { ListSampleExercises } from "../components/muscleUpsForBeginners/listSampleExercises";
-import { Purchase } from "../components/muscleUpsForBeginners/purchase";
-import { ListSampleRoutine } from "../components/muscleUpsForBeginners/listSampleRoutine";
-import { ResultsSample } from "../components/muscleUpsForBeginners/resultsSample";
+// import { Purchase } from "../components/muscleUpsForBeginners/purchase";
+// import { ListSampleRoutine } from "../components/muscleUpsForBeginners/listSampleRoutine";
+// import { ResultsSample } from "../components/muscleUpsForBeginners/resultsSample";
 import { PurchaseButton } from "./PurchaseButton";
 import { useContext, useEffect, useState } from "react";
 import Auth0Context from "../utils/auth0/auth0Context";
@@ -161,20 +161,30 @@ export const MuscleUpSample = () => {
             <br></br>
           </div>
         </Col> */}
-        {programPurchaseStatus ? (
-          <Link to={"/muscle-up"}>
-            <Button>View Program</Button>
-          </Link>
-        ) : (
-          <PurchaseButton programId={"0"} />
-        )}
+        <Col span={24} style={{ textAlign: "center" }}>
+          {programPurchaseStatus ? (
+            <Link to={"/muscle-up"}>
+              <Button
+                style={{
+                  width: "300px",
+                  backgroundColor: "black",
+                  color: "white",
+                }}
+              >
+                <strong>View Program</strong>
+              </Button>
+            </Link>
+          ) : (
+            <PurchaseButton programId={"0"} />
+          )}
+        </Col>
         <Col span={24} style={{ textAlign: "center" }}>
           <h2>Sample Workouts</h2>
         </Col>
         <ListSampleExercises />
-        <ListSampleRoutine />
+        {/* <ListSampleRoutine />
         <ResultsSample />
-        <Purchase />
+        <Purchase /> */}
       </Row>
     </PageLayout>
   );

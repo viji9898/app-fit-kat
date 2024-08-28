@@ -26,7 +26,7 @@ export const Footer = () => {
               color: "salmon",
             }}
           >
-            {"❤️ techForGood"} &copy; {year} {"❤️ "}
+            {"techForGood"} &copy; {year} {""}
           </a>
         </div>
       </Col>
