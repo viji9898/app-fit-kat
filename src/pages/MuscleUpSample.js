@@ -1,4 +1,4 @@
-import { Button, Col, Row } from "antd";
+import { Button, Col, Divider, Row } from "antd";
 import { PageLayout } from "../components/layout/pageLayout";
 import { ListSampleExercises } from "../components/muscleUpsForBeginners/listSampleExercises";
 // import { Purchase } from "../components/muscleUpsForBeginners/purchase";
@@ -8,6 +8,7 @@ import { PurchaseButton } from "./PurchaseButton";
 import { useContext, useEffect, useState } from "react";
 import Auth0Context from "../utils/auth0/auth0Context";
 import { Link } from "react-router-dom";
+import { ListSampleRoutine } from "../components/muscleUpsForBeginners/listSampleRoutine";
 
 export const MuscleUpSample = () => {
   const { userProfile } = useContext(Auth0Context);
@@ -178,13 +179,12 @@ export const MuscleUpSample = () => {
             <PurchaseButton programId={"0"} />
           )}
         </Col>
+        <Divider />
+        <ListSampleRoutine />
         <Col span={24} style={{ textAlign: "center" }}>
           <h2>Sample Workouts</h2>
         </Col>
         <ListSampleExercises />
-        {/* <ListSampleRoutine />
-        <ResultsSample />
-        <Purchase /> */}
       </Row>
     </PageLayout>
   );
