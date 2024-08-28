@@ -4,10 +4,10 @@ const stripe = require("stripe")(process.env.REACT_APP_STRIPE_TEST_SECRET_KEY, {
 
 exports.handler = async (event) => {
   const body = JSON.parse(event.body);
-  const productInfo = body.data.productInfo;
+  // const productInfo = body.data.productInfo;
   const userProfile = body.data.userProfile;
 
-  const { programName, programRef } = productInfo;
+  // const { programName, programRef } = productInfo;
 
   const { ref, userEmail } = userProfile;
 
