@@ -7,15 +7,14 @@ exports.handler = async (event) => {
   const productInfo = body.data.productInfo;
   const userProfile = body.data.userProfile;
 
-  const { programCurrency, programName, programPrice, programRef } =
-    productInfo;
+  const { programName, programRef } = productInfo;
 
   const { ref, userEmail } = userProfile;
 
   try {
     const paymentIntent = await stripe.paymentIntents.create({
-      amount: programPrice,
-      currency: programCurrency,
+      amount: 100,
+      currency: GBP,
       automatic_payment_methods: {
         enabled: true,
       },

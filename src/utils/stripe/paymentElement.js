@@ -45,7 +45,7 @@ export default function PaymentElement() {
         productInfo: {
           programName: "Muscle Ups",
           programPrice: "100",
-          programCurrency: "usd",
+          programCurrency: "gbp",
           programRef: "1111",
           productDescription: "",
         },
