@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
   });
 
   const body = JSON.parse(event.body);
-  const programData = body.programData;
+  const programData = body.data.object.metadata;
   const { programName, programRef, ref } = programData;
 
   const updateProgram = [{ ref: programRef, title: programName }];
