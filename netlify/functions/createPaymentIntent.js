@@ -21,8 +21,8 @@ exports.handler = async (event) => {
       receipt_email: userEmail,
       metadata: {
         ref,
-        programRef,
-        programName,
+        programRef: "1111",
+        programName: "Muslce Ups",
       },
     });
 
