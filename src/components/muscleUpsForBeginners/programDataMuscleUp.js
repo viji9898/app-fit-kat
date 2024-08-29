@@ -27,7 +27,7 @@ export const workoutList = [
     title: "Shoulder Conditioning",
     url: "shoulder-conditioning",
     thumbnail:
-      "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/program-thumbnails/text-shoulder-conditioning.png",
+      "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/program-thumbnails/shoulder-opeing-cool-down-05.png",
   },
 ];
 
