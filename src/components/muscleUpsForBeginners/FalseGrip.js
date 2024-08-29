@@ -146,14 +146,14 @@ export const FalseGrip = () => {
         <Col sm={24} xs={24} md={12}>
           <div
             style={{
-              padding: "75% 0 0 0",
+              padding: "50% 0 0 0",
               position: "relative",
             }}
           >
             <iframe
               loading="lazy"
               src={
-                "https://player.vimeo.com/video/525247324?h=6a6068dec3&amp;badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                "https://player.vimeo.com/video/1004169813?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               }
               frameborder="0"
               allow={"autoplay; fullscreen; picture-in-picture"}
