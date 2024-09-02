@@ -6,106 +6,168 @@ import { VideoCard } from "../program/videoCard";
 export const ListSampleExercises = () => {
   const exercises = [
     {
-      url: "superman",
-      title: "Superman",
+      url: "",
+      title: "Transitions Unassisted",
       sets: "3",
-      reps: "10",
-      rest: "10 secs",
+      reps: "1-3",
+      rest: false,
+      description: <div></div>,
       images: [
         {
-          url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/646dc4ed-92b5-4d7b-8e9b-cdbc1a4164a4.gif?ClientID=vimeo-core-prod&Date=1707744506&Signature=91304a5aa101bb4c42ad1dfc2ffc836c9de77075",
-        },
-      ],
-      videoUrl: [
-        {
-          url: "https://player.vimeo.com/video/912214724?h=fa1697e6c2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-          title: "Superman",
-          buttonTitle: "",
-        },
-      ],
-      description: (
-        <div>
-          <p>To perform the Superman exercise:</p>
-          <ol>
-            <li>
-              Lie face down on a mat or flat surface with your arms extended
-              overhead and your legs straight.
-            </li>
-            <li>Engage your core muscles to stabilize your spine.</li>
-            <li>
-              Simultaneously lift your arms, chest, and legs off the ground,
-              keeping them straight.
-            </li>
-            <li>
-              Hold this position for a few seconds, focusing on squeezing your
-              glutes and lower back muscles.
-            </li>
-            <li>
-              Slowly lower back down to the starting position with control.
-            </li>
-          </ol>
-        </div>
-      ),
-      thumbnailGif: [
-        {
-          url: "https://app-fitness.s3.eu-west-2.amazonaws.com/warm-up-band-bar/forward-circles.gif",
+          url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/563cca66-cca0-4453-984d-7ade3dc8687d.gif?ClientID=sulu&Date=1709459127&Signature=3b70c283ecdc5ec2bc23d7b1fdc07ece8b6ba5e7",
+          title: "sample-image",
         },
         {
-          url: "https://app-fitness.s3.eu-west-2.amazonaws.com/warm-up-band-bar/forward-circles-behind-view.gif",
+          url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/transition/unassited-transitions-01.png",
+          title: "sample-image",
         },
-      ],
-    },
-    {
-      url: "scapular-push",
-      title: "Scapular Push",
-      sets: "3",
-      reps: "10",
-      rest: "10 secs",
-      images: [
         {
-          url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/a488add5-38f9-4606-a9bf-f06d418aa871.gif?ClientID=vimeo-core-prod&Date=1707744898&Signature=42aaf72f0d2987cf6c9e6cbcc60fb7116cc81fdc",
+          url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/transition/unassited-transitions-02.png",
           title: "sample-image",
         },
       ],
       videoUrl: [
         {
-          url: "https://player.vimeo.com/video/912213626?h=fc8498ddfe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-          title: "Band & Bar Warm-up",
+          url: "https://player.vimeo.com/video/1004236713?h=21a86481e9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+          title: "Transitions Unassisted",
           buttonTitle: "",
         },
       ],
-      description: (
-        <div>
-          {" "}
-          <p>To perform the Scapular Push exercise:</p>
-          <ol>
-            <li>
-              Start by lying face down on a mat or flat surface with your arms
-              extended overhead and your palms facing each other.
-            </li>
-            <li>Engage your core muscles to maintain a stable position.</li>
-            <li>
-              Keeping your arms straight, lift your chest and shoulders off the
-              ground by retracting your shoulder blades and squeezing your
-              shoulder blades together.
-            </li>
-            <li>
-              Hold this elevated position for a brief pause, focusing on the
-              contraction in your mid-back muscles.
-            </li>
-            <li>
-              Slowly lower yourself back down to the starting position with
-              control.
-            </li>
-          </ol>
-        </div>
-      ),
-      thumbnailGif: [
+    },
+    // {
+    //   url: "superman",
+    //   title: "Superman",
+    //   sets: "3",
+    //   reps: "10",
+    //   rest: "10 secs",
+    //   images: [
+    //     {
+    //       url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/646dc4ed-92b5-4d7b-8e9b-cdbc1a4164a4.gif?ClientID=vimeo-core-prod&Date=1707744506&Signature=91304a5aa101bb4c42ad1dfc2ffc836c9de77075",
+    //     },
+    //   ],
+    //   videoUrl: [
+    //     {
+    //       url: "https://player.vimeo.com/video/912214724?h=fa1697e6c2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    //       title: "Superman",
+    //       buttonTitle: "",
+    //     },
+    //   ],
+    //   description: (
+    //     <div>
+    //       <p>To perform the Superman exercise:</p>
+    //       <ol>
+    //         <li>
+    //           Lie face down on a mat or flat surface with your arms extended
+    //           overhead and your legs straight.
+    //         </li>
+    //         <li>Engage your core muscles to stabilize your spine.</li>
+    //         <li>
+    //           Simultaneously lift your arms, chest, and legs off the ground,
+    //           keeping them straight.
+    //         </li>
+    //         <li>
+    //           Hold this position for a few seconds, focusing on squeezing your
+    //           glutes and lower back muscles.
+    //         </li>
+    //         <li>
+    //           Slowly lower back down to the starting position with control.
+    //         </li>
+    //       </ol>
+    //     </div>
+    //   ),
+    //   thumbnailGif: [
+    //     {
+    //       url: "https://app-fitness.s3.eu-west-2.amazonaws.com/warm-up-band-bar/forward-circles.gif",
+    //     },
+    //     {
+    //       url: "https://app-fitness.s3.eu-west-2.amazonaws.com/warm-up-band-bar/forward-circles-behind-view.gif",
+    //     },
+    //   ],
+    // },
+    {
+      url: "",
+      title: "Russian Press Up",
+      sets: "3",
+      reps: "3-5",
+      rest: false,
+      description: <div></div>,
+      images: [
         {
-          url: "https://app-fitness.s3.eu-west-2.amazonaws.com/warm-up-band-bar/backward-circles.gif",
+          url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/f2c85121-d61b-4737-ad03-f78ab71c08d6.gif?ClientID=sulu&Date=1709458038&Signature=73c59f8954cef5f83e7432e24dcdd754c060774c",
+          title: "Russian Press Up",
+        },
+        {
+          url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/transition/russian-press-up-03.png",
+          title: "Russian Press Up",
+        },
+        {
+          url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/transition/russian-press-up-02.png",
+          title: "Russian Press Up",
+        },
+        {
+          url: "https://app-fitness.s3.eu-west-2.amazonaws.com/muscle-ups/transition/russian-press-up-01.png",
+          title: "Russian Press Up",
+        },
+      ],
+      videoUrl: [
+        {
+          url: "https://player.vimeo.com/video/1004228535?h=d7efad0f92&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+          title: "Russian Press Up",
+          buttonTitle: "",
         },
       ],
     },
+    // {
+    //   url: "scapular-push",
+    //   title: "Scapular Push",
+    //   sets: "3",
+    //   reps: "10",
+    //   rest: "10 secs",
+    //   images: [
+    //     {
+    //       url: "https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/a488add5-38f9-4606-a9bf-f06d418aa871.gif?ClientID=vimeo-core-prod&Date=1707744898&Signature=42aaf72f0d2987cf6c9e6cbcc60fb7116cc81fdc",
+    //       title: "sample-image",
+    //     },
+    //   ],
+    //   videoUrl: [
+    //     {
+    //       url: "https://player.vimeo.com/video/912213626?h=fc8498ddfe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    //       title: "Band & Bar Warm-up",
+    //       buttonTitle: "",
+    //     },
+    //   ],
+    //   description: (
+    //     <div>
+    //       {" "}
+    //       <p>To perform the Scapular Push exercise:</p>
+    //       <ol>
+    //         <li>
+    //           Start by lying face down on a mat or flat surface with your arms
+    //           extended overhead and your palms facing each other.
+    //         </li>
+    //         <li>Engage your core muscles to maintain a stable position.</li>
+    //         <li>
+    //           Keeping your arms straight, lift your chest and shoulders off the
+    //           ground by retracting your shoulder blades and squeezing your
+    //           shoulder blades together.
+    //         </li>
+    //         <li>
+    //           Hold this elevated position for a brief pause, focusing on the
+    //           contraction in your mid-back muscles.
+    //         </li>
+    //         <li>
+    //           Slowly lower yourself back down to the starting position with
+    //           control.
+    //         </li>
+    //       </ol>
+    //     </div>
+    //   ),
+    //   thumbnailGif: [
+    //     {
+    //       url: "https://app-fitness.s3.eu-west-2.amazonaws.com/warm-up-band-bar/backward-circles.gif",
+    //     },
+    //   ],
+    // },
     {
       url: "hollow-body-hold",
       title: "Hollow Body Hold",
@@ -164,7 +226,7 @@ export const ListSampleExercises = () => {
     },
     {
       url: "wrists",
-      title: "Wrists",
+      title: "Wrists Warm Up",
       sets: "N/A",
       reps: "N/A",
       rest: false,
@@ -249,11 +311,11 @@ export const ListSampleExercises = () => {
         label: "Video",
         children: <VideoCard exercises={data} />,
       },
-      {
-        key: "3",
-        label: "Detail",
-        children: <div style={{ padding: "10px" }}>{data.description}</div>,
-      },
+      // {
+      //   key: "3",
+      //   label: "Detail",
+      //   children: <div style={{ padding: "10px" }}>{data.description}</div>,
+      // },
     ];
     const OperationsSlot = {
       left: (
